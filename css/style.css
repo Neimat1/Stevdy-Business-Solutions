@@ -31,6 +31,34 @@ html {
   font-size: 62.5%;
   overflow-x: hidden;
   scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+}
+
+html::-webkit-scrollbar {
+  width: 1rem;
+}
+
+html::-webkit-scrollbar-track {
+  background: #fff;
+}
+
+html::-webkit-scrollbar-thumb {
+  background: -webkit-gradient(linear, right top, left top, from(#7C1C80), to(#FF6057));
+  background: linear-gradient(to left, #7C1C80, #FF6057);
+}
+
+.btn {
+  background: -webkit-gradient(linear, right top, left top, from(#7C1C80), to(#FF6057));
+  background: linear-gradient(to left, #7C1C80, #FF6057);
+  color: #fff;
+  font-size: 1.3rem;
+  font-weight: bold;
+  border-radius: .6rem;
+  padding: .5rem 2rem;
+  cursor: pointer;
+  width: 13rem;
+  -webkit-box-shadow: 0rem 0rem 1rem rgba(0, 0, 0, 0.3);
+          box-shadow: 0rem 0rem 1rem rgba(0, 0, 0, 0.3);
 }
 
 .content {
@@ -107,6 +135,69 @@ html {
   -webkit-transform: translateX(100%) rotate(225deg);
           transform: translateX(100%) rotate(225deg);
   border-radius: 6rem;
+}
+
+.header {
+  background: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding: 1.8rem 0;
+  z-index: 999999;
+}
+
+.header.active {
+  background: -webkit-gradient(linear, right top, left top, from(#7C1C80), to(#FF6057));
+  background: linear-gradient(to left, #7C1C80, #FF6057);
+}
+
+.header .menu-btn {
+  display: none;
+}
+
+.header .logo {
+  font-weight: bolder;
+  font-size: 3.52rem;
+  text-transform: uppercase;
+  color: #fff;
+  letter-spacing: .1rem;
+}
+
+.header .logo span {
+  position: relative;
+}
+
+.header .logo span::after {
+  content: "-";
+  position: absolute;
+  top: .2rem;
+  right: 0;
+  left: 29%;
+  font-weight: lighter;
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+.header .navbar a {
+  margin-left: 1.5rem;
+  font-size: 1.3rem;
+  color: #fff;
+  display: inline-block;
+}
+
+.header .btn:hover {
+  background: #fff;
+  color: #FF6057;
 }
 
 .best-business-solution {
@@ -271,6 +362,44 @@ html {
 @media (max-width: 991px) {
   html {
     font-size: 55%;
+  }
+}
+
+@media (max-width: 765px) {
+  .header {
+    background: -webkit-gradient(linear, right top, left top, from(#7C1C80), to(#FF6057));
+    background: linear-gradient(to left, #7C1C80, #FF6057);
+  }
+  .header .menu-btn {
+    display: block;
+    color: #fff;
+    font-size: 2.5rem;
+    cursor: pointer;
+  }
+  .header .navbar {
+    position: absolute;
+    top: 99%;
+    right: 0;
+    left: 0;
+    text-align: center;
+    background: -webkit-gradient(linear, right top, left top, from(#7d1c80d0), to(#ff5f57e0));
+    background: linear-gradient(to left, #7d1c80d0, #ff5f57e0);
+    -webkit-clip-path: polygon(0 0, 100% 0%, 100% 0, 0 0);
+            clip-path: polygon(0 0, 100% 0%, 100% 0, 0 0);
+  }
+  .header .navbar.active {
+    -webkit-clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 100%);
+            clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 100%);
+  }
+  .header .navbar a {
+    margin: 2rem;
+    font-size: 2rem;
+    display: block;
+    color: #fff;
+  }
+  .header .navbar a:hover, .header .navbar a.active {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
   }
 }
 

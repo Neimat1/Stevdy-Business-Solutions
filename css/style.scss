@@ -15,6 +15,10 @@ $black:#3B3A3A;
 $orange:#FF6057;
 $bg-black:#8F8F8F;
 $box-shadow: 0rem 0rem 1rem rgba(0,0,0,.3);
+$white:#fff;
+
+$linear-bg:linear-gradient(to left,#7C1C80,#FF6057);
+$linear-bg-light:linear-gradient(to left,#7d1c80d0,#ff5f57e0);
 
 
 @mixin grid($val) {
@@ -44,7 +48,35 @@ html{
     font-size: 62.5%;
     overflow-x: hidden;
     scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
+    
+    &::-webkit-scrollbar{
+        width: 1rem;
+    }
+
+    &::-webkit-scrollbar-track{
+        background: $white;
+    }
+    
+    &::-webkit-scrollbar-thumb{
+        background: $linear-bg;
+    }
+
 }
+
+.btn{
+    background: $linear-bg;
+    color: $white;
+    font-size: 1.3rem ;
+    font-weight: bold;
+    border-radius: .6rem;
+    padding:.5rem 2rem ;
+    cursor: pointer;
+    width: 13rem;
+    box-shadow: $box-shadow;
+
+}
+
 
 .content{
 
@@ -117,6 +149,68 @@ html{
     }
 }
 
+
+
+.header{
+    background: none;
+    position: fixed;
+    top: 0; right: 0; left: 0;
+    display: flex ;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 1.8rem 0;
+    z-index: 999999;
+    
+    &.active{
+        background: $linear-bg;
+    }
+
+    .menu-btn{
+        display: none;
+    }
+
+    .logo{
+        font-weight: bolder;
+        font-size: 3.52rem;
+        text-transform: uppercase;
+        color: $white;
+        letter-spacing: .1rem;
+        
+        span{
+            position: relative;
+
+            &::after{
+                content: "-";
+                position: absolute;
+                top: .2rem; right: 0; left: 29%;
+                font-weight: lighter;
+                font-size: 1.5rem;
+                color: $white;
+            }
+        }
+
+    }
+
+    .navbar{
+
+        a{
+            margin-left: 1.5rem;
+            font-size: 1.3rem;
+            color: $white;
+            display: inline-block;
+        }
+
+    }
+
+    .btn{
+
+        &:hover{
+            background: $white;
+            color: $orange;
+        }    
+    }
+
+}
 
 .best-business-solution{
     width: 80%;
@@ -261,6 +355,39 @@ html{
 
 
 @media (max-width:765px){
+    .header{
+        background: $linear-bg;
+
+        .menu-btn{
+            display: block;
+            color: $white;
+            font-size: 2.5rem;
+            cursor: pointer;
+        }
+        .navbar{
+            position: absolute;
+            top:99%; right: 0;left: 0;
+            text-align: center;
+            background: $linear-bg-light;
+            clip-path: polygon(0 0, 100% 0%, 100% 0, 0 0);
+
+            &.active{
+                clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 100%);
+            }
+            a{
+                margin: 2rem;
+                font-size: 2rem;
+                display: block;
+                color: $white;
+                    
+                &:hover,
+                &.active{
+                    transform: scale(1.1);
+                }
+            }
+
+        }
+    }
 }
 
     
