@@ -54,9 +54,8 @@ html::-webkit-scrollbar-thumb {
   font-size: 1.3rem;
   font-weight: bold;
   border-radius: .6rem;
-  padding: .5rem 2rem;
+  padding: .5rem 5rem;
   cursor: pointer;
-  width: 13rem;
   -webkit-box-shadow: 0rem 0rem 1rem rgba(0, 0, 0, 0.3);
           box-shadow: 0rem 0rem 1rem rgba(0, 0, 0, 0.3);
 }
