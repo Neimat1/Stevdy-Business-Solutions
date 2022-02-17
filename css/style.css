@@ -9,9 +9,123 @@
   text-transform: capitalize;
 }
 
+.bg-F1291E {
+  background-color: #F1291E;
+}
+
+.bg-36C5AD {
+  background-color: #36C5AD;
+}
+
+.bg-CB4BF8 {
+  background-color: #CB4BF8;
+}
+
+.bg-56E65B {
+  background-color: #56E65B;
+}
+
 html {
   font-size: 62.5%;
   overflow-x: hidden;
   scroll-behavior: smooth;
+}
+
+.best-business-solution {
+  width: 80%;
+  margin: 3rem auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(30rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 1.5rem;
+}
+
+.best-business-solution .content {
+  position: relative;
+  width: 60%;
+}
+
+.best-business-solution .content::before {
+  content: "";
+  position: absolute;
+  top: -1rem;
+  left: 0;
+  height: .2rem;
+  width: 5rem;
+  background: #FF6057;
+}
+
+.best-business-solution .content h3 {
+  color: #3B3A3A;
+  font-size: 2.375rem;
+  font-weight: bolder;
+}
+
+.best-business-solution .content p {
+  color: #8F8F8F;
+  font-weight: .875rem;
+  margin: 2rem 0;
+}
+
+.best-business-solution .content a {
+  color: #FF6057;
+  font-weight: 1rem;
+  font-weight: bold;
+}
+
+.best-business-solution .icons-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(30rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 1.5rem;
+  line-height: 2;
+}
+
+.best-business-solution .icons-container .icon {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 2rem;
+  -webkit-box-shadow: 0rem 0rem 1rem rgba(0, 0, 0, 0.3);
+          box-shadow: 0rem 0rem 1rem rgba(0, 0, 0, 0.3);
+}
+
+.best-business-solution .icons-container .icon img {
+  width: 40%;
+}
+
+.best-business-solution .icons-container h3 {
+  color: #3B3A3A;
+  font-size: 1rem;
+  font-weight: bolder;
+  position: relative;
+}
+
+.best-business-solution .icons-container h3::after {
+  content: "";
+  position: absolute;
+  bottom: -.5rem;
+  left: 0;
+  height: .2rem;
+  width: 5rem;
+  background: #FF6057;
+}
+
+.best-business-solution .icons-container p {
+  margin-top: 2rem;
+  width: 70%;
+  color: #8F8F8F;
+  font-weight: 1rem;
 }
 /*# sourceMappingURL=style.css.map */
