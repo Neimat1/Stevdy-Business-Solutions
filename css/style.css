@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600;700;800&display=swap");
+@import url("https://use.typekit.net/awe2eui.css");
 * {
   font-family: 'Poppins', sans-serif;
   border: none;
@@ -88,7 +89,7 @@ body {
 }
 
 .content p {
-  color: #8F8F8F;
+  color: #333333;
   font-weight: .875rem;
   margin: 2rem 0;
   line-height: 2;
@@ -374,7 +375,7 @@ body {
 .best-business-solution .icons-container p {
   margin-top: 2rem;
   width: 70%;
-  color: #8F8F8F;
+  color: #333333;
   font-weight: 1rem;
 }
 
@@ -420,7 +421,7 @@ body {
 
 .platform-overview .heading span {
   font-size: 1.75rem;
-  color: #8F8F8F;
+  color: #333333;
   font-weight: bolder;
 }
 
@@ -432,7 +433,7 @@ body {
 
 .platform-overview .heading p {
   font-size: .875rem;
-  color: #8F8F8F;
+  color: #333333;
   line-height: 2;
 }
 
@@ -463,12 +464,89 @@ body {
   height: 1rem;
   margin-left: 1rem;
   border-radius: 50%;
-  background: #8F8F8F;
+  background: #333333;
   cursor: pointer;
 }
 
 .platform-overview .image span:hover, .platform-overview .image span.active {
   background: #FF6057;
+}
+
+footer {
+  margin-bottom: -1rem;
+  background: #333333;
+  z-index: 999999;
+}
+
+footer .box-container {
+  color: #fff;
+  width: 80%;
+  margin: 1rem auto;
+  padding: 3rem 0;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(27rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
+  gap: 1.5rem;
+}
+
+footer .box-container .box {
+  padding: 1rem 5rem;
+  line-height: 2;
+}
+
+footer .box-container .box h3, footer .box-container .box p {
+  font-size: 1.5rem;
+}
+
+footer .box-container .box h2 {
+  font-size: 3.5rem;
+  font-family: nueva-std, serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+footer .box-container .box a {
+  display: block;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+footer .box-container .box a:hover {
+  padding-left: .5rem;
+  color: #FF6057;
+}
+
+footer form {
+  margin-top: 2rem;
+  background: #fff;
+  border-radius: 5rem;
+  padding: .7rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer form .email {
+  width: 100%;
+  background: none;
+  text-transform: none;
+  font-size: 1.6rem;
+  color: #3B3A3A;
+  padding: 0 .3rem;
+}
+
+footer form .btn {
+  margin-top: 0;
+  border-radius: 5rem;
+  background: #FF6057;
+  color: #fff;
+}
+
+footer form .btn:hover {
+  background: none;
+  color: #FF6057;
 }
 
 @media (max-width: 991px) {

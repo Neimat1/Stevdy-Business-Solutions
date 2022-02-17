@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600;700;800&display=swap');
+@import url("https://use.typekit.net/awe2eui.css");
 
 *{
     font-family: 'Poppins', sans-serif;
@@ -12,8 +13,8 @@
 
 
 $black:#3B3A3A;
+$bg-black:#333333;
 $orange:#FF6057;
-$bg-black:#8F8F8F;
 $box-shadow: 0rem 0rem 1rem rgba(0,0,0,.3);
 $white:#fff;
 
@@ -431,6 +432,81 @@ body{
             }
 
         }
+    }
+}
+
+
+footer{
+    // position: fixed;
+    // bottom: 0; left: 0; right: 0;
+    margin-bottom: -1rem;
+    background: $bg-black;
+    z-index: 999999;
+    .box-container{
+        color: $white;
+        width: 80%;
+        margin: 1rem auto;
+        padding: 3rem 0;
+
+        @include grid(27rem);
+
+        .box{
+            padding:1rem 5rem ;
+            line-height: 2;
+            h3,p{
+                font-size: 1.5rem;
+            }
+            h2{
+                font-size: 3.5rem;
+                font-family: nueva-std, serif;
+                font-weight: 700;
+                font-style: italic;
+            }
+            a{
+                display: block;
+                color: $white;
+                font-size: 1rem;
+                font-weight: bold;
+
+                &:hover{
+                    padding-left: .5rem;
+                    color: $orange;
+                }
+            }
+        }
+
+    }
+
+
+    form{
+        margin-top: 2rem;
+        background: $white;
+        border-radius: 5rem;
+        // border: $border;
+        padding: .7rem;
+        display: flex;
+
+        .email{
+            width: 100%;
+            background: none;
+            text-transform: none;
+            font-size: 1.6rem;
+            color: $black;
+            padding: 0 .3rem;
+        }
+
+        .btn{
+            margin-top: 0;
+            border-radius: 5rem;
+            background: $orange;
+            color: $white;
+
+            &:hover{
+                background: none;
+                color:$orange;
+            }
+        }
+
     }
 }
 
