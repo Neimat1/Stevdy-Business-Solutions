@@ -6,6 +6,7 @@
     padding: 0; margin: 0;
     text-decoration: none;
     text-transform: capitalize;
+    transition: all .2s linear;
 
 }
 
@@ -190,18 +191,61 @@ html{
     }
 }
 
-// .bacground{
-//     background: linear-gradient(#FF6057,#808080);
-//     opacity: .8;
-//     width: 50rem;
-//     height: 50rem;
-//     transform: rotate(45deg) translateX(-90%);
-//     border-radius: 6rem;
-//     z-index: 1;
-//     // position: fixed;
-//     // top: 0;
-//     // left: 0;
-// }
+.platform-overview{
+    overflow: hidden;
+    width: 70%;
+    margin: 5rem auto;
+    .heading{
+        text-align: center;
+        margin: 1rem auto;
+        width: 60%;
+        span{
+            font-size: 1.75rem;
+            color: $bg-black;
+            font-weight: bolder;
+
+        }
+        h3{
+            font-weight: bolder;
+            font-size: 3.75rem;
+            color: $black;
+
+        }
+        p{
+            font-size: .875rem;
+            color: $bg-black;
+            line-height: 2;
+
+        }
+    }
+
+    .image{
+        img{
+            display: block;
+            width: 100%;
+        }
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        span{
+            display: inline-block;
+            width: 1rem;
+            height: 1rem;
+            margin-left: 1rem;
+            border-radius: 50%;
+            background: $bg-black;
+            cursor: pointer;
+
+            &:hover,
+            &.active{
+                background: $orange;
+            }
+
+        }
+    }
+}
 
 
 
@@ -226,5 +270,12 @@ html{
         font-size: 50%;
     }
 
+    .best-platform{
+    
+        .content{
+            transform: translate(0,15%);
+            z-index: 99999;
+        }
+    }
 
 }
