@@ -200,6 +200,111 @@ html::-webkit-scrollbar-thumb {
   color: #FF6057;
 }
 
+.home {
+  background: url(../images/SansTitre-1.png) no-repeat;
+  background-position: center center;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-filter: brightness(0.97);
+          filter: brightness(0.97);
+  background-size: cover;
+  padding: 6rem 4rem;
+  margin: 0 auto;
+}
+
+.home .box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.home .box.brand {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 10rem;
+          flex: 1 1 10rem;
+}
+
+.home .content {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 40rem;
+          flex: 1 1 40rem;
+  padding: 3rem;
+  padding-left: 10%;
+}
+
+.home .content .heading {
+  width: 80%;
+  margin-top: 9rem;
+  color: #fff;
+}
+
+.home .content span {
+  font-size: 1.5rem;
+}
+
+.home .content h1 {
+  font-size: 3.6rem;
+  font-weight: bold;
+}
+
+.home .content p {
+  color: #fff;
+  font-size: 1.12rem;
+}
+
+.home .content .btn {
+  margin-top: 1rem;
+  background: #fff;
+  color: #FF6057;
+}
+
+.home .image {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 40rem;
+          flex: 1 1 40rem;
+}
+
+.home .image img {
+  width: 100%;
+}
+
+.home .btn {
+  background: #fff;
+  color: #FF6057;
+}
+
+.brands {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0 auto;
+  margin-bottom: 3rem;
+  padding: 3rem  2rem;
+  width: 80%;
+}
+
+.brands.brand {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 10rem;
+          flex: 1 1 10rem;
+}
+
 .best-business-solution {
   width: 80%;
   margin: 3rem auto;
@@ -400,6 +505,9 @@ html::-webkit-scrollbar-thumb {
   .header .navbar a:hover, .header .navbar a.active {
     -webkit-transform: scale(1.1);
             transform: scale(1.1);
+  }
+  .home .content {
+    padding-left: 0;
   }
 }
 
