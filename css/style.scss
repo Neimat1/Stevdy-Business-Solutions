@@ -64,6 +64,10 @@ html{
 
 }
 
+body{
+    overflow-x: hidden;
+}
+
 .btn{
     background: $linear-bg;
     color: $white;
@@ -152,6 +156,7 @@ html{
 
 
 .header{
+    width: 100vw;
     background: none;
     position: fixed;
     top: 0; right: 0; left: 0;
@@ -213,13 +218,15 @@ html{
 }
 
 .home{
+    width: 100vw;
     background: url(../images/SansTitre-1.png) no-repeat;
     background-position:center center  ;
     object-fit: cover;
     filter:brightness(.97);
     background-size: cover ;
-    padding: 6rem 4rem  ;
+    padding: 9rem 4rem  ;
     margin: 0 auto;
+    transform: translateY(-4rem);
 
 
     .box{
@@ -293,8 +300,6 @@ html{
     margin-bottom: 3rem;
     padding: 3rem  2rem;
     width: 80%;
-   
-
     &.brand{
         flex: 1 1 10rem;
         
@@ -375,7 +380,6 @@ html{
 }
 
 .platform-overview{
-    overflow: hidden;
     width: 70%;
     margin: 5rem auto;
     .heading{
