@@ -48,7 +48,7 @@ html::-webkit-scrollbar-thumb {
 }
 
 body {
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 .btn {
@@ -214,7 +214,7 @@ body {
           filter: brightness(0.97);
   background-size: cover;
   padding: 9rem 4rem;
-  margin: 0 auto;
+  margin: -1rem auto;
   -webkit-transform: translateY(-4rem);
           transform: translateY(-4rem);
 }
@@ -241,8 +241,8 @@ body {
 
 .home .content {
   -webkit-box-flex: 1;
-      -ms-flex: 1 1 40rem;
-          flex: 1 1 40rem;
+      -ms-flex: 1 1 30rem;
+          flex: 1 1 30rem;
   padding: 3rem;
   padding-left: 10%;
 }
@@ -274,6 +274,7 @@ body {
 }
 
 .home .image {
+  padding-right: 5%;
   -webkit-box-flex: 1;
       -ms-flex: 1 1 40rem;
           flex: 1 1 40rem;
@@ -302,7 +303,7 @@ body {
       flex-wrap: wrap;
   margin: 0 auto;
   margin-bottom: 3rem;
-  padding: 3rem  2rem;
+  padding: 0  2rem;
   width: 80%;
 }
 

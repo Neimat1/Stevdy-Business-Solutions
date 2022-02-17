@@ -65,7 +65,7 @@ html{
 }
 
 body{
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 .btn{
@@ -225,7 +225,7 @@ body{
     filter:brightness(.97);
     background-size: cover ;
     padding: 9rem 4rem  ;
-    margin: 0 auto;
+    margin: -1rem auto;
     transform: translateY(-4rem);
 
 
@@ -243,7 +243,7 @@ body{
 
 
     .content{
-        flex: 1 1 40rem ;
+        flex: 1 1 30rem ;
         padding: 3rem;
         padding-left: 10%;
 
@@ -280,6 +280,7 @@ body{
     }
 
     .image{
+        padding-right: 5%;
         flex: 1 1 40rem ;
         img{
             width: 100%;
@@ -298,7 +299,7 @@ body{
     flex-wrap: wrap;
     margin: 0 auto;
     margin-bottom: 3rem;
-    padding: 3rem  2rem;
+    padding: 0  2rem;
     width: 80%;
     &.brand{
         flex: 1 1 10rem;
@@ -370,7 +371,6 @@ body{
         margin: 0 ;
 
         z-index: 99999;
-       
     }
 
     .content{
