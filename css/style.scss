@@ -13,7 +13,7 @@
 
 
 $black:#3B3A3A;
-$bg-black:#333333;
+$bg-black:#8F8F8F;
 $orange:#FF6057;
 $box-shadow: 0rem 0rem 1rem rgba(0,0,0,.3);
 $white:#fff;
@@ -85,19 +85,8 @@ body{
 
 .content{
 
-
-
-    position: relative;
     width: 60%;
-    &::before{
-        content: "";
-        position: absolute;
-        top: -1rem; left: 0;
-        height: .2rem;
-        width: 5rem;
-        background: $orange;
-        z-index: 99999;
-    }
+
 
     h3{
         color: $black;
@@ -107,7 +96,7 @@ body{
     }
     p{
         color: $bg-black;
-        font-weight: .875rem;
+        font-size: .875rem;
         margin: 2rem 0;
         line-height: 2;
         z-index: 99999;
@@ -299,7 +288,7 @@ body{
     justify-content: center;
     flex-wrap: wrap;
     margin: 0 auto;
-    margin-bottom: 3rem;
+    margin-bottom: 4rem;
     padding: 0  2rem;
     width: 80%;
     &.brand{
@@ -312,6 +301,20 @@ body{
     width: 80%;
     margin: 3rem auto;
     @include grid(30rem);
+
+    .content{
+        position: relative;
+    
+        &::before{
+            content: "";
+            position: absolute;
+            top: -1rem; left: 0;
+            height: .2rem;
+            width: 5rem;
+            background: $orange;
+            z-index: 99999;
+        }
+    }
 
     
     .icons-container{
@@ -377,6 +380,18 @@ body{
     .content{
         transform: translate(0,20%);
         z-index: 99999;
+
+        position: relative;
+    
+    &::before{
+        content: "";
+        position: absolute;
+        top: -1rem; left: 0;
+        height: .2rem;
+        width: 5rem;
+        background: $orange;
+        z-index: 99999;
+    }
     }
 }
 
@@ -440,7 +455,7 @@ footer{
     // position: fixed;
     // bottom: 0; left: 0; right: 0;
     margin-bottom: -1rem;
-    background: $bg-black;
+    background: $black;
     z-index: 999999;
     .box-container{
         color: $white;
@@ -509,6 +524,133 @@ footer{
 
     }
 }
+
+.dont-just-take{
+    
+    .heading{
+        text-align: center;
+        h2{
+            font-size: 2.375rem;
+            font-weight: bolder;
+            color: $black;
+        }
+    }
+
+    .box-container{
+        @include grid(20rem);
+        margin: 4rem auto;
+        width: 70%;
+    }
+
+    .box{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    
+        h3{
+            font-size: 2.875rem;
+            font-weight: bolder;
+            color: $orange;
+        }
+    
+        span{
+            display: block;
+            font-size: 1.25rem;
+            font-weight: bolder;
+            color: $bg-black;
+        }
+    }
+
+    .user{
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        gap: 1rem;
+        box-shadow: $box-shadow;
+
+        padding: 3rem;
+        .user-image{
+            flex: 1 1 10rem;
+            
+        }
+
+        .user-data{
+           flex: 1 1 10rem;
+            h3{
+                font-size: 1.5rem;
+                color: $black;
+                font-weight: bolder;
+            }
+            span{
+                font-size: 1rem;
+                color: $bg-black;
+                margin-top: .5rem;
+                margin-bottom: 3rem;
+                font-weight: bolder;
+
+            }
+            p{
+                font-size: 1.125rem;
+                line-height: 2;
+                margin-bottom: 3rem;
+
+            }
+
+            .star{
+                color:#7C1C80;
+                i{
+                    padding: .2rem;
+                }
+            }
+        }
+    }
+
+    .user-contrlos{
+        margin-top: 2rem;
+        span{
+            display: inline-block;
+            width: 1rem;
+            height: 1rem;
+            margin-left: 1rem;
+            border-radius: 50%;
+            background: $bg-black;
+            cursor: pointer;
+
+            &:hover,
+            &.active{
+                background: $orange;
+            }
+
+        }
+    }
+
+
+    .content{
+        h3{
+            color: $black;
+            font-size: 2.375rem;
+            font-weight: bolder;
+
+
+        }
+        p{
+            font-size: 1rem;
+            color: $bg-black;
+
+        }
+        .btn{
+            &:hover{
+                background: $white;
+                color: $orange;
+            }
+        }
+    }
+    
+
+}
+
+
 
 
 

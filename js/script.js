@@ -39,7 +39,13 @@ document.querySelectorAll(".platform-overview .image .image-contrlos .image-btn 
     btn.onclick =() =>{
         let src =  btn.getAttribute("data-src");
         let backSrc =document.querySelector(".platform-overview .image img").getAttribute('src');
-        lastActiveBackground(backSrc);
+
+        document.querySelectorAll(".platform-overview .image .image-contrlos .image-btn ").forEach(btn2 => {
+            let backSrc =document.querySelector(".platform-overview .image img").getAttribute('src');
+            if(backSrc===backSrc)
+                btn2.classList.remove('active');
+        
+        })
         document.querySelector(".platform-overview .image img").src = src;
         btn.classList.add('active');
     } 
@@ -47,11 +53,19 @@ document.querySelectorAll(".platform-overview .image .image-contrlos .image-btn 
 })
 
 
-function lastActiveBackground(val){
-    document.querySelectorAll(".platform-overview .image .image-contrlos .image-btn ").forEach(btn => {
-        let backSrc =document.querySelector(".platform-overview .image img").getAttribute('src');
-        if(backSrc===val)
-            btn.classList.remove('active');
-    
-    })
-}
+document.querySelectorAll(".dont-just-take .user-contrlos .user-btn  ").forEach(btn => {
+    btn.onclick =() =>{
+        let src =  btn.getAttribute("data-src");
+        let backSrc =document.querySelector(".dont-just-take .user-image img").getAttribute('src');
+
+        document.querySelectorAll(".dont-just-take .user-contrlos .user-btn  ").forEach(btn2 => {
+            let backSrc =document.querySelector(".dont-just-take .user-image img").getAttribute('src');
+            if(backSrc===backSrc)
+                btn2.classList.remove('active');
+        
+        })
+        document.querySelector(".dont-just-take .user-image img").src = src;
+        btn.classList.add('active');
+    } 
+
+})
