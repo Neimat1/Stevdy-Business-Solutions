@@ -283,5 +283,8 @@ html {
             transform: translate(0, 15%);
     z-index: 99999;
   }
+  .platform-overview .heading {
+    width: 100%;
+  }
 }
 /*# sourceMappingURL=style.css.map */
