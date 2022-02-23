@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600;700;800&display=swap');
 @import url("https://use.typekit.net/awe2eui.css");
+@import "main-variables.scss";
+
 
 *{
     font-family: 'Poppins', sans-serif;
@@ -10,7 +12,7 @@
     transition: all .2s linear;
 
 }
-@import "main-variables.scss";
+
 
 @mixin grid($val) {
     display: grid;
