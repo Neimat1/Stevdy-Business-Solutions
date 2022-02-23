@@ -1,0 +1,54 @@
+.platform-overview{
+    width: 70%;
+    margin: 5rem auto;
+    .heading{
+        text-align: center;
+        margin: 1rem auto;
+        width: 60%;
+        span{
+            font-size: 1.75rem;
+            color: $bg-black;
+            font-weight: bolder;
+
+        }
+        h3{
+            font-weight: bolder;
+            font-size: 3.75rem;
+            color: $black;
+
+        }
+        p{
+            font-size: .875rem;
+            color: $bg-black;
+            line-height: 2;
+
+        }
+    }
+
+    .image{
+        img{
+            display: block;
+            width: 100%;
+        }
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        span{
+            display: inline-block;
+            width: 1rem;
+            height: 1rem;
+            margin-left: 1rem;
+            border-radius: 50%;
+            background: $bg-black;
+            cursor: pointer;
+
+            &:hover,
+            &.active{
+                background: $orange;
+            }
+
+        }
+    }
+}
