@@ -1,0 +1,62 @@
+.best-business-solution{
+    width: 80%;
+    margin: 3rem auto;
+    @include grid(30rem);
+
+    .content{
+        position: relative;
+    
+        &::before{
+            content: "";
+            position: absolute;
+            top: -1rem; left: 0;
+            height: .2rem;
+            width: 5rem;
+            background: $orange;
+            z-index: 99999;
+        }
+    }
+
+    
+    .icons-container{
+        @include grid(20rem);
+        line-height: 2;
+        .icon{
+            width: 5rem;
+            height: 5rem;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 2rem;
+            box-shadow: $box-shadow;
+    
+            img{
+                width: 40%;
+            }
+        }
+
+        h3{
+            color: $black;
+            font-size: 1rem;
+            font-weight: bolder;
+            position: relative;
+
+            &::after{
+                content: "";
+                position: absolute;
+                bottom: -.5rem; left: 0;
+                height: .2rem;
+                width: 5rem;
+                background: $orange;
+            }
+        }
+        p{
+            margin-top: 2rem;
+            width: 70%;
+            color: $bg-black;
+            font-weight:1rem;
+        }
+    }
+
+}
