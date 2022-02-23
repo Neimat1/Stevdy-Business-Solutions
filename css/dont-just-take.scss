@@ -1,0 +1,124 @@
+.dont-just-take{
+    
+    .heading{
+        text-align: center;
+        h2{
+            font-size: 2.375rem;
+            font-weight: bolder;
+            color: $black;
+        }
+    }
+
+    .box-container{
+        @include grid(20rem);
+        margin: 4rem auto;
+        width: 70%;
+    }
+
+    .box{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    
+        h3{
+            font-size: 2.875rem;
+            font-weight: bolder;
+            color: $orange;
+        }
+    
+        span{
+            display: block;
+            font-size: 1.25rem;
+            font-weight: bolder;
+            color: $bg-black;
+        }
+    }
+
+    .user{
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        gap: 1rem;
+        box-shadow: $box-shadow;
+
+        padding: 3rem;
+        .user-image{
+            flex: 1 1 10rem;
+            
+        }
+
+        .user-data{
+           flex: 1 1 10rem;
+            h3{
+                font-size: 1.5rem;
+                color: $black;
+                font-weight: bolder;
+            }
+            span{
+                font-size: 1rem;
+                color: $bg-black;
+                margin-top: .5rem;
+                margin-bottom: 3rem;
+                font-weight: bolder;
+
+            }
+            p{
+                font-size: 1.125rem;
+                line-height: 2;
+                margin-bottom: 3rem;
+
+            }
+
+            .star{
+                color:#7C1C80;
+                i{
+                    padding: .2rem;
+                }
+            }
+        }
+    }
+
+    .user-contrlos{
+        margin-top: 2rem;
+        span{
+            display: inline-block;
+            width: 1rem;
+            height: 1rem;
+            margin-left: 1rem;
+            border-radius: 50%;
+            background: $bg-black;
+            cursor: pointer;
+
+            &:hover,
+            &.active{
+                background: $orange;
+            }
+
+        }
+    }
+
+
+    .content{
+        h3{
+            color: $black;
+            font-size: 2.375rem;
+            font-weight: bolder;
+
+
+        }
+        p{
+            font-size: 1rem;
+            color: $bg-black;
+
+        }
+        .btn{
+            &:hover{
+                background: $white;
+                color: $orange;
+            }
+        }
+    }
+    
+
+}
