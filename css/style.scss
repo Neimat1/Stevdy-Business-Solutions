@@ -146,11 +146,8 @@ body{
 
 
 @import "header.scss";
-
 @import "home.scss";
-
 @import "brands.scss";
-
 .best-business-solution{
     width: 80%;
     margin: 3rem auto;
@@ -214,40 +211,7 @@ body{
 
 }
 
-.best-platform{
-    margin-top: 5rem;
-    padding: 3rem 2rem;
-    width: 80%;
-    margin: 3rem auto;
-    @include grid(40rem);
-
-    .image{
-        img{
-            width: 100%;
-            object-fit: cover;
-        }
-        margin: 0 ;
-
-        z-index: 99999;
-    }
-
-    .content{
-        transform: translate(0,20%);
-        z-index: 99999;
-
-        position: relative;
-    
-    &::before{
-        content: "";
-        position: absolute;
-        top: -1rem; left: 0;
-        height: .2rem;
-        width: 5rem;
-        background: $orange;
-        z-index: 99999;
-    }
-    }
-}
+@import "best-platform.scss";
 
 .platform-overview{
     width: 70%;
@@ -304,13 +268,5 @@ body{
     }
 }
 
-
 @import "footer.scss";
-
-
-
-
-
-
-
 @import "media_queries.scss";
