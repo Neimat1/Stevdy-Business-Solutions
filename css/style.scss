@@ -145,67 +145,7 @@ body{
 
 
 
-.header{
-    width: 100vw;
-    background: none;
-    position: fixed;
-    top: 0; right: 0; left: 0;
-    display: flex ;
-    align-items: center;
-    justify-content: space-evenly;
-    padding: 1.8rem 0;
-    z-index: 999999;
-    
-    &.active{
-        background: $linear-bg;
-    }
-
-    .menu-btn{
-        display: none;
-    }
-
-    .logo{
-        font-weight: bolder;
-        font-size: 3.52rem;
-        text-transform: uppercase;
-        color: $white;
-        letter-spacing: .1rem;
-        
-        span{
-            position: relative;
-
-            &::after{
-                content: "-";
-                position: absolute;
-                top: .2rem; right: 0; left: 29%;
-                font-weight: lighter;
-                font-size: 1.5rem;
-                color: $white;
-            }
-        }
-
-    }
-
-    .navbar{
-
-        a{
-            margin-left: 1.5rem;
-            font-size: 1.3rem;
-            color: $white;
-            display: inline-block;
-        }
-
-    }
-
-    .btn{
-
-        &:hover{
-            background: $white;
-            color: $orange;
-        }    
-    }
-
-}
+@import "header.scss";
 
 @import "home.scss";
 
