@@ -209,20 +209,7 @@ body{
 
 @import "home.scss";
 
-.brands{
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin: 0 auto;
-    margin-bottom: 4rem;
-    padding: 0  2rem;
-    width: 80%;
-    &.brand{
-        flex: 1 1 10rem;
-        
-    }
-}
+@import "brands.scss";
 
 .best-business-solution{
     width: 80%;
