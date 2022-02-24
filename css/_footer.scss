@@ -1,37 +1,50 @@
 footer{
-    // position: fixed;
-    // bottom: 0; left: 0; right: 0;
-    margin-bottom: -1rem;
     background: $black;
     z-index: 999999;
+
+
     .box-container{
-        color: $white;
+        /*box-model*/
+        padding: 20px 5px;
+        margin: 0 auto;
         width: 80%;
-        margin: 1rem auto;
-        padding: 3rem 0;
 
-        @include grid(27rem);
-
+        /*font**/
+        color: $white;
         .box{
-            padding:1rem 5rem ;
-            line-height: 2;
+
+            /*box-model*/
+            margin-top: 10px;
+            width: 33%;
+
             h3,p{
-                font-size: 1.5rem;
+                /*font*/
+                font-size: 16px;
+                font-weight: bold;
+                
+                /*box-model*/
+                margin-bottom: 20px;
             }
+
+            p{width: 70%;}
             h2{
-                font-size: 3.5rem;
+                /*font*/
+                font-size: 48px;
                 font-family: nueva-std, serif;
                 font-weight: 700;
-                font-style: italic;
             }
             a{
+                /*layout*/
                 display: block;
+
+                /*font*/
                 color: $white;
-                font-size: 1rem;
+                font-size: 14px;
                 font-weight: bold;
 
                 &:hover{
-                    padding-left: .5rem;
+                    /*box-model*/
+                    padding-left: 5px;
                     color: $orange;
                 }
             }
@@ -41,27 +54,43 @@ footer{
 
 
     form{
-        margin-top: 2rem;
+        /*background*/
         background: $white;
-        border-radius: 5rem;
-        // border: $border;
-        padding: .7rem;
+
+        /*box-model*/
+        margin-top: 30px;
+        border-radius: 30px;
+        padding: 2px;
+
+        /*layout*/
         display: flex;
 
         .email{
+            /*box-model*/
             width: 100%;
+            padding: 3px  20px;
+
+            /*background*/
             background: none;
+
+            /*font*/
             text-transform: none;
-            font-size: 1.6rem;
+            font-size:16px;
+            font-weight: bold;
             color: $black;
-            padding: 0 .3rem;
+            
         }
 
         .btn{
+
+            /*box-model*/
             margin-top: 0;
-            border-radius: 5rem;
+            padding: 5px 30px;
+            border-radius: 30px;
             background: $orange;
-            padding: 1rem ;
+            
+            /*font*/
+            font-size: 16px;
             color: $white;
 
             &:hover{
@@ -71,4 +100,44 @@ footer{
         }
 
     }
+}
+
+
+
+// media queries
+@media (max-width:991px){
+    footer{
+        .box-container{
+            flex-wrap: wrap;
+            .box{width: 40% ;}
+        }
+    }
+
+}
+
+
+@media (max-width:765px){
+
+    footer{
+        .box-container{
+            .box{width: 80% ;}
+        }
+    
+    }
+    
+}
+
+
+
+@media (max-width:450px){
+
+    footer{
+        .box-container{
+            .box{
+                margin: 30px auto;
+                width: 100% ;
+            }
+        }
+    }
+    
 }
