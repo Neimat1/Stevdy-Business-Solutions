@@ -1,8 +1,9 @@
 $black:#3B3A3A;
 $bg-black:#8F8F8F;
 $orange:#FF6057;
+$violet:#7C1C80;
 $box-shadow: 0rem 0rem 1rem rgba(0,0,0,.3);
 $white:#fff;
 
-$linear-bg:linear-gradient(to left,#7C1C80,#FF6057);
+$linear-bg:linear-gradient(60deg ,$orange,$violet);
 $linear-bg-light:linear-gradient(to left,#7d1c80d0,#ff5f57e0);

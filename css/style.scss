@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600;700;800&display=swap');
 @import url("https://use.typekit.net/awe2eui.css");
-@import "main-variables.scss";
+@import "_main-variables.scss";
 
 
 *{
@@ -38,13 +38,12 @@
 }
 
 html{
-    // font-size: 62.5%;
     overflow-x: hidden;
     scroll-behavior: smooth;
-    scroll-padding-top: 100px;
+    scroll-padding-top: 50px;
     
     &::-webkit-scrollbar{
-        width: 16px;
+        width: 10px;
     }
 
     &::-webkit-scrollbar-track{
@@ -57,52 +56,57 @@ html{
 
 }
 
-body{
-    overflow: hidden;
-}
 
 .btn{
+
+
+    /*background*/
     background: $linear-bg;
-    color: $white;
-    font-size: 1.3rem ;
-    font-weight: bold;
-    border-radius: .6rem;
-    padding:.5rem 3rem ;
-    cursor: pointer;
-    // width: 13rem;
-    box-shadow: $box-shadow;
-
-}
-
-
-.content{
-
-    width: 60%;
-
-
-    h3{
-        color: $black;
-        font-size: 2.375rem;
-        font-weight: bolder;
-        z-index: 99999;
-    }
-    p{
-        color: $bg-black;
-        font-size: .875rem;
-        margin: 2rem 0;
-        line-height: 2;
-        z-index: 99999;
-    }
-
-    a{
-        color: $orange;
-        font-weight: 1rem ;
-        font-weight: bold;
-        z-index: 99999;
     
-    }
+    /*font*/
+    color: $white;
+    font-weight: bold;
+    font-size: 16px;
 
+    /*box-model*/
+    border-radius: 6px;
+    padding:3px 30px ;
+
+    &:hover{box-shadow: $box-shadow;}
+
+    cursor: pointer;
+    
 }
+
+
+// .content{
+
+//     width: 60%;
+
+
+//     h3{
+//         color: $black;
+//         font-size: 2.375rem;
+//         font-weight: bolder;
+//         z-index: 99999;
+//     }
+//     p{
+//         color: $bg-black;
+//         font-size: .875rem;
+//         margin: 2rem 0;
+//         line-height: 2;
+//         z-index: 99999;
+//     }
+
+//     a{
+//         color: $orange;
+//         font-weight: 1rem ;
+//         font-weight: bold;
+//         z-index: 99999;
+    
+//     }
+
+// }
 .background{
     position: relative;
     &::after{
@@ -138,11 +142,10 @@ body{
 
 
 /* main components */
-@import "header.scss";
-@import "home.scss";
-@import "brands.scss";
-@import "best-business-solution.scss";
-@import "best-platform.scss";
-@import "platform-overview.scss";
-@import "footer.scss";
-@import "media_queries.scss";
+@import "_header.scss";
+@import "_home.scss";
+@import "_best-business-solution.scss";
+@import "_best-platform.scss";
+@import "_platform-overview.scss";
+@import "_footer.scss";
+@import "_media_queries.scss";
