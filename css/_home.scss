@@ -1,33 +1,9 @@
 .home{
-    /*box-model*/
-    height: 100vh;
 
     /*background*/
     background: url(../images/SansTitre-1.png) no-repeat;
     background-position:center center;
     background-size: cover ;
-
-
-    .home-container{
-        /*box-model*/
-        width: 90%;
-        margin-left: 10%;
-        padding-top: 100px ;
-
-        /*layout*/
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
-        .box{
-            /*box-model*/
-            width: 50%;
-            margin-top: 50px;
-            margin-right: 10px;
-        }
-        
-
-    }
 
     .content{
 
@@ -65,12 +41,12 @@
     }
 
 
-    .brands{
+    .brands-container{
         /*box-model*/
         width: 100%;
         margin: 0 auto;
-        margin-top:50px;
-        padding: 20px  5px;
+        margin-top:40px;
+        padding: 20px  5px 0;
 
         /*layout*/
         display: flex;
@@ -85,11 +61,6 @@
     .home{
     
         .content{
-    
-            /*box-model*/
-            padding-left: 50px;
-            padding-right: 10px;
-
 
             span{font-size: 20px;}
             h1{font-size: 40px;}
@@ -97,7 +68,7 @@
         }
     }
 
-    .brands{
+    .brands-container{
         /*box-model*/
         width: 80%;
         margin: 0 auto;
@@ -114,29 +85,6 @@
 
 @media (max-width:765px){
 
-    .home{
-    
-    
-        .home-container{
-            /*box-model*/
-            width: 90%;
-            margin: 0 auto;
-
-            /*layout*/
-            flex-wrap: wrap;
-    
-            .box{width: 100%;}
-            
-    
-        }
-    
-        .content{
-            /*box-model*/
-            width: 60%;
-            padding-left: 30px;
-        }
-    
-    }
 }
 
     
@@ -145,23 +93,12 @@
     .home{
     
         .content{
-            /*box-model*/
-            width: 75%;
-            padding-left: 10px;
-
 
             span{font-size: 18px;}
             h1{font-size: 30px;}
             p{font-size: 15px;}
         }
 
-        .btn{
-            /*box-model*/
-            padding: 4px 15px;
-
-            /*font*/
-            font-size: 14px;
-        }
     }
 
 }

@@ -82,6 +82,35 @@ body{
     
 }
 
+.box-container{
+    /*box-model*/
+    width: 90%;
+    margin-left: 10%;
+    padding-top: 100px ;
+
+    /*layout*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .box{
+        /*box-model*/
+        width: 50%;
+        margin-top: 50px;
+        margin-right: 10px;
+    }
+    
+
+}
+
+.content{
+
+    /*box-model*/
+    padding-left: 100px;
+    padding-right: 10px;
+    
+}
+
 
 // .content{
 
@@ -146,9 +175,12 @@ body{
 
 
 /* main components */
+
+@import "media_queries";
 @import "_header.scss";
 @import "_home.scss";
 @import "_best-business-solution.scss";
 @import "_best-platform.scss";
 @import "_platform-overview.scss";
 @import "_footer.scss";
+
