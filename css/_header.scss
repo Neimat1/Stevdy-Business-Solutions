@@ -1,5 +1,5 @@
 .header{
-
+    /*background*/
     background: none;
 
     /*position*/
@@ -52,11 +52,11 @@
 
     .navbar{
 
-        transform: translateX(-25px);
+        transform: translateX(-33px);
 
         a{
             /*box-model*/
-            margin-left: 10px;
+            margin-left: 5px;
 
             /*font*/
             font-size: 14px;
@@ -78,6 +78,105 @@
             /*font*/
             color: $orange;
         }    
+    }
+
+}
+
+
+// media queries
+@media (max-width:991px){
+
+
+}
+
+
+@media (max-width:765px){
+    .header{
+        /*background*/
+        background: $linear-bg;
+
+        .menu-btn{
+            /*layout*/
+            display: block;
+            cursor: pointer;
+
+            /*font*/
+            color: $white;
+            font-size: 30px;
+            
+        }
+        .navbar{
+            /*position*/
+            position: absolute;
+            top:99%; right: 0;left: 0;
+
+            /*font*/
+            text-align: center;
+            transform: translateX(0);
+            
+            /*background*/
+            background: $linear-bg-light;
+            clip-path: polygon(0 0, 100% 0%, 100% 0, 0 0);
+
+            &.active{clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 100%);}
+            
+            a{
+                /*box-model*/
+                margin: 5px;
+                /*font*/
+                font-size: 20px;
+                color: $white;
+
+                /*layout*/
+                display: block;
+            
+                &:hover,
+                &.active{transform: scale(1.1);}
+            }
+
+        }
+    }
+
+}
+
+    
+
+@media (max-width:450px){
+
+    .header{
+
+        .logo{
+
+            /*font*/
+            font-size:40px;
+    
+    
+            
+            span{
+
+    
+                &::after{
+    
+                    /*position*/
+                    top: -2px;
+                }
+            }
+    
+        }
+        .menu-btn{
+
+            /*font*/
+            font-size: 25px;
+            
+        }
+
+        .btn{
+            /*box-model*/
+            padding: 4px 20px;
+
+            /*font*/
+            font-size: 14px;
+        }
     }
 
 }

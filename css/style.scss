@@ -40,10 +40,10 @@
 html{
     overflow-x: hidden;
     scroll-behavior: smooth;
-    scroll-padding-top: 50px;
+    scroll-padding-top: 60px;
     
     &::-webkit-scrollbar{
-        width: 10px;
+        width: 5px;
     }
 
     &::-webkit-scrollbar-track{
@@ -54,6 +54,10 @@ html{
         background: $linear-bg;
     }
 
+}
+
+body{
+    overflow-x: hidden;
 }
 
 
@@ -148,4 +152,3 @@ html{
 @import "_best-platform.scss";
 @import "_platform-overview.scss";
 @import "_footer.scss";
-@import "_media_queries.scss";
