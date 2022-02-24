@@ -23,6 +23,7 @@
         /*transform*/
         transform: translateX(-27%);
     }
+
     
     .content{
 
@@ -86,6 +87,27 @@
     }
 }
 
+.aganist{
+    img{
+            /*transform*/
+            transform: translateX(0) !important ;
+            
+            /*box-model*/
+            width: 100%;
+    }
+
+    
+    .polygon{
+        &::after{
+            /*transform*/
+            transform:translateX(60%) rotate(-53deg)  ;
+            z-index: -2222;
+            
+
+        }
+    }
+}
+
 
 // media queries
 @media (max-width:991px){
@@ -101,6 +123,12 @@
         transform:translateX(-70%) rotate(45deg)  ;
         
 
+    }
+}
+
+.aganist{
+    .polygon{
+        &::after{transform:translateX(50%) rotate(-50deg)  ;}
     }
 }
 
@@ -161,6 +189,12 @@
 
     }
 
+    .aganist{
+        .polygon{
+            &::after{transform:translateX(90%) rotate(-50deg)  ;}
+        }
+    }
+
     
 }
 
@@ -178,5 +212,12 @@
         }
     
 
+    }
+
+
+    .aganist{
+        .polygon{
+            &::after{transform:translateX(50%) rotate(-50deg)  ;}
+        }
     }
 }
