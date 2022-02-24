@@ -57,7 +57,7 @@ html{
 }
 
 body{
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 
@@ -111,47 +111,30 @@ body{
     
 }
 
-
-// .content{
-
-//     width: 60%;
-
-
-//     h3{
-//         color: $black;
-//         font-size: 2.375rem;
-//         font-weight: bolder;
-//         z-index: 99999;
-//     }
-//     p{
-//         color: $bg-black;
-//         font-size: .875rem;
-//         margin: 2rem 0;
-//         line-height: 2;
-//         z-index: 99999;
-//     }
-
-//     a{
-//         color: $orange;
-//         font-weight: 1rem ;
-//         font-weight: bold;
-//         z-index: 99999;
-    
-//     }
-
-// }
-.background{
+.polygon{
     position: relative;
+    z-index: -1;
+
+
     &::after{
         content: "";
+
+        /*position*/
         position: absolute;
         top: 0;left: 0;
-        background: linear-gradient(#FF6057,#808080);
-        opacity: .4;
-        width: 60rem;
-        height: 60rem;
-        transform:translateX(-70%) rotate(45deg) ;
-        border-radius: 6rem;
+
+        /*background*/
+        background: linear-gradient(to bottom left ,$orange,#808080);
+
+        /*box-model*/
+        width: 700px;
+        height: 600px;
+        border-radius:50px;
+
+
+        /*transform*/
+        transform:translateX(-60%) rotate(-53deg)  ;
+        
 
     }
 }

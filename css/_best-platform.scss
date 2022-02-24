@@ -1,34 +1,182 @@
 .best-platform{
-    margin-top: 5rem;
-    padding: 3rem 2rem;
-    width: 80%;
-    margin: 3rem auto;
-    @include grid(40rem);
 
-    .image{
-        img{
-            width: 100%;
-            object-fit: cover;
+    .box-container{
+        /*box-model*/
+        margin: 0 auto;
+        padding-top: 10px ;
+
+        .box{
+
+            /*position*/
+            position: relative;
+            z-index: 9999;
+
         }
-        margin: 0 ;
-
-        z-index: 99999;
-    }
-
-    .content{
-        transform: translate(0,20%);
-        z-index: 99999;
-
-        position: relative;
     
-    &::before{
-        content: "";
-        position: absolute;
-        top: -1rem; left: 0;
-        height: .2rem;
-        width: 5rem;
-        background: $orange;
-        z-index: 99999;
     }
+
+
+    img{
+
+        /*box-model*/
+        width: 800px;
+        /*transform*/
+        transform: translateX(-27%);
+    }
+    
+    .content{
+
+        /*position*/
+        position: relative;
+
+        /*box-model*/
+        padding-top: 20px;
+        width: 64%;
+    
+        &::before{
+            content: "";
+
+
+            /*position*/
+            position: absolute;
+            top:0; left: 100px;
+
+            /*box-model*/
+            height: 4px;
+            width: 100px;
+
+            /*background*/
+            background: $orange;
+            
+        }
+
+        h3{
+            /*font*/
+            font-size: 30px;
+            color: $black;
+
+            /*box-model*/
+            margin-bottom: 20px;
+
+        }
+
+        p{
+            /*font*/
+            font-size: 14px;
+            color: $bg-black;
+            line-height: 25px;
+            /*box-model*/
+            margin-bottom: 20px;
+        }
+
+        a{
+            /*font*/
+            font-size: 16px;
+            color: $orange;
+            font-weight: bold;
+            
+
+            i{
+                margin-left: 30px;
+            }
+        }
+
+
+
+    }
+}
+
+
+// media queries
+@media (max-width:991px){
+
+
+    
+.polygon{
+    &::after{
+        /*box-model*/
+        width: 500px;
+        height: 500px;
+        /*transform*/
+        transform:translateX(-70%) rotate(45deg)  ;
+        
+
+    }
+}
+
+    
+    .best-platform{
+
+        .content{    
+            /*box-model**/
+            width: 75%;
+            &::before{left: 50px;}
+        }
+
+        img{
+
+            /*box-model*/
+            width: 590px;
+            /*transform*/
+            transform: translateX(-27%);
+        }
+    }
+
+}
+
+
+@media (max-width:765px){
+    .best-platform{
+        .box-container{
+            /*box-model*/
+            width: 90%;
+            margin: 0 auto;
+    
+            /*layout*/
+            flex-wrap: wrap;
+
+            .box{
+                width: 100%;
+            }
+            
+        }
+
+        img{
+
+            /*box-model*/
+            width: 100%;
+            /*transform*/
+            transform: translateX(0);
+        }
+
+    
+        .content{
+            /*box-model*/
+            width: 100%;
+            padding-left: 10px;
+
+            &::before{left: 10px;}
+
+        }       
+
+    }
+
+    
+}
+
+
+
+@media (max-width:450px){
+    .best-platform{
+        .content{
+            /*box-model*/
+            padding-left: 10px;
+        }
+
+        .icons-container{
+            .item{width: 90%;}
+        }
+    
+
     }
 }
