@@ -1,0 +1,221 @@
+.grow-your-business{
+
+
+    .box-container{
+        /*box-model*/
+        margin: 0 auto;
+        padding-top: 10px ;
+    
+    
+        .box{
+            /*box-model*/
+            margin-top: 30px;
+            margin-bottom: 20px;
+
+            /*layout*/
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        
+    
+    }
+    
+    .user-contrlos{
+        /*box-model*/
+        margin-top: 10px;
+        span{
+            /*layout*/
+            display: inline-block;
+
+            /*box-model*/
+            width: 10px;
+            height: 10px;
+            margin-left: 5px;
+            border-radius: 50%;
+
+            /*background*/
+            background: $bg-black;
+            cursor: pointer;
+    
+            &:hover,
+            &.active{
+                background: $orange;
+            }
+    
+        }
+    }
+    
+    
+    .content{
+        h3{
+            /*font*/
+            font-size: 38px;
+            color: $black;
+    
+            /*box-model*/
+            margin-bottom: 20px;
+    
+        }
+    
+        p{
+            /*font*/
+            font-size: 14px;
+            color: $bg-black;
+            line-height: 25px;
+    
+            /*box-model*/
+            margin-bottom: 20px;
+        }
+        .btn{
+            &:hover{
+    
+                /*background*/
+                background: $white;
+    
+                /*font*/
+                color: $orange;
+            }
+        }
+    }
+    
+    
+    
+    
+
+
+
+
+    .user{
+        /*layout*/
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+
+        /*box-model*/
+        padding: 40px  10px;
+        margin: 20px 5px;
+        box-shadow: $box-shadow;
+
+        .user-image{
+            width: 50%;
+            padding-left: 30px;
+        }
+
+        .user-data{
+            /*box-model*/
+            width: 50%;
+            padding:0 10px ;
+
+            h3{
+                /*font*/
+                font-size: 24px;
+                color: $black;
+                font-weight: bolder;
+
+                /*box-model*/
+                margin-bottom: 5px;
+            }
+            span{
+                /*layout*/
+                display: block;
+
+                /*font*/
+                font-size: 14px;
+                color: $bg-black;
+                font-weight: bolder;
+
+                /*box-model*/
+                margin-bottom: 20px;
+
+            }
+            p{
+                /*font*/
+                font-size: 18px;
+                color: $bg-black;
+                line-height: 25px;
+
+                /*box-model*/
+                margin-bottom: 20px;
+                
+
+            }
+
+            .star{
+                color:#7C1C80;
+                i{
+                    padding: 2px;
+                }
+            }
+        }
+    }
+}
+
+
+// media queries
+@media (max-width:991px){
+
+    .grow-your-business{
+        .user{
+            /*layout*/
+            flex-wrap: wrap;
+    
+    
+            .user-image{padding-left: 20px;}
+    
+            .user-data{
+                /*box-model*/
+                width: 80%;
+            }
+    
+        }
+    
+    }
+
+}
+
+
+@media (max-width:765px){
+    .grow-your-business{
+        .box{width: 100%;}
+
+
+        .user{
+            flex-wrap: nowrap;
+            .user-data{width: 50%;}
+        }        
+        .content{
+            width: 80%;
+        }
+    }      
+    
+}
+
+
+
+@media (max-width:450px){
+    .grow-your-business{
+
+        .content{
+            h3{font-size: 30px;}
+        
+        }
+        .user{
+            /*layout*/
+            flex-wrap: wrap;
+    
+    
+            .user-image{padding-left: 20px;}
+    
+            .user-data{
+                /*box-model*/
+                width: 80%;
+            }
+    
+        }
+    
+    }
+    
+}
