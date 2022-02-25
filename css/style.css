@@ -408,6 +408,9 @@ body {
 }
 
 @media (max-width: 450px) {
+  .home .content {
+    padding-left: 10px;
+  }
   .home .content span {
     font-size: 18px;
   }

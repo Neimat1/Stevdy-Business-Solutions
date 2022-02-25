@@ -53,18 +53,18 @@ document.querySelectorAll(".platform-overview .image .image-contrlos .image-btn 
 })
 
 
-document.querySelectorAll(".dont-just-take .user-contrlos .user-btn  ").forEach(btn => {
+document.querySelectorAll(".grow-your-business .user-contrlos .user-btn  ").forEach(btn => {
     btn.onclick =() =>{
         let src =  btn.getAttribute("data-src");
-        let backSrc =document.querySelector(".dont-just-take .user-image img").getAttribute('src');
+        let backSrc =document.querySelector(".grow-your-business .user-image img").getAttribute('src');
 
-        document.querySelectorAll(".dont-just-take .user-contrlos .user-btn  ").forEach(btn2 => {
-            let backSrc =document.querySelector(".dont-just-take .user-image img").getAttribute('src');
+        document.querySelectorAll(".grow-your-business .user-contrlos .user-btn  ").forEach(btn2 => {
+            let backSrc =document.querySelector(".grow-your-business .user-image img").getAttribute('src');
             if(backSrc===backSrc)
                 btn2.classList.remove('active');
         
         })
-        document.querySelector(".dont-just-take .user-image img").src = src;
+        document.querySelector(".grow-your-business .user-image img").src = src;
         btn.classList.add('active');
     } 
 
